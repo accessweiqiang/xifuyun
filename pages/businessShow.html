@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>喜付云平台</title>
+    <!-- Bootstrap -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../res/css/lib/awesome/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/dev/platFormLayout.css">
+    <script type="text/javascript" src="../res/js/lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../res/js/dev/common.js"></script>
+</head>
+
+<body>
+    <div id="platform-inner-page" class="full">
+        
+        <div class="service-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="business-show x-block margin-b-50 col-md-10 col-md-offset-1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <p class="text-info">喜付收发费平台：通过本系统对学校收发退费进行统一管理</p>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="margin0">
+                                    <li class="text-success">数据交换平台:可实现校内各业务系统与统一费用管理平台的缴费数据联通。如未接通数据交换平台，或未通过平台连接各业务系统，则只能创建本地项目</li>
+                                    <li class="text-success">连接状态:显示当前各数据平台与目标平台之间的数据连接状况，绿线标示数据联通，红线及X表示双方系统未能实现数据对接，或未开启权限</li>
+                                    <li class="text-success">状态描述：当前数据平台与目标平台之间的数据连接异常的原因</li>
+                                </ul>
+                            </div>   
+                        </div>
+    
+                        <div class="link-map">
+                            <div class="school-plat">
+                                <div class="item">教务系统</div>
+                                <div class="item">后勤系统</div>
+                                <div class="item">财务系统</div>
+                            </div>
+                            <div class="data-switch-plat">数据交换平台</div>
+                            <div class="fee-plat">收发费管理平台</div>
+                            <div class="link-line">
+                                <div class="item j2s">教务系统-数据交换平台</div>
+                                <div class="item h2s unlink">后勤系统-数据交换平台</div>
+                                <div class="item c2s">财务系统-数据交换平台</div>
+                                <div class="item s2f">数据交换平台-收发费管理平台</div>
+                            </div>
+                        </div>
+    
+    
+                        <table class="table table-hover table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">数据平台</th>
+                                    <th class="text-center">目标平台</th>
+                                    <th class="text-center">数据连接状态</th>
+                                    <th class="text-center">状态描述</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>数据交换平台</td>
+                                    <td>统一费用管理平台</td>
+                                    <td class="text-warning">未连接</td>
+                                    <td>未配置接口权限</td>
+                                </tr>
+                                <tr>
+                                    <td>财务系统</td>
+                                    <td>数据交换平台</td>
+                                    <td class="text-success">已连接</td>
+                                    <td>未配置接口权限</td>
+                                </tr>
+                                <tr>
+                                    <td>教务系统</td>
+                                    <td>数据交换平台</td>
+                                    <td class="text-success">已连接</td>
+                                    <td>未配置接口权限</td>
+                                </tr>
+                                <tr>
+                                    <td>后勤系统</td>
+                                    <td>数据交换平台</td>
+                                    <td class="text-success">已连接</td>
+                                    <td>未配置接口权限</td>
+                                </tr>
+                            </tbody>       
+                        </table>                     
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

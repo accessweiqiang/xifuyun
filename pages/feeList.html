@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>喜付云平台</title>
+    <!-- Bootstrap -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../res/css/lib/awesome/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/dev/platFormLayout.css">
+    <script type="text/javascript" src="../res/js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../res/js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../res/js/dev/common.js"></script>
+</head>
+
+<body>
+    <div class="modal fade" id="createPrj" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">创建项目</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">创建方式：</label>
+                            <div class="col-sm-5">
+                                <select class="form-control">
+                                    <option value="1">模板创建</option>
+                                    <option value="2">手动创建</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">选择模板</label>
+                            <div class="col-sm-5">
+                                <select class="form-control">
+                                    <option value="1">重修费用</option>
+                                    <option value="2">四级考试费用</option>
+                                    <option value="2">六级考试费用</option>
+                                </select>
+                            </div>
+                            <lablel class="control-label col-sm-3">
+                                <a href="#" class="text-success">（创建新模板）</a>
+                                </label>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5 col-sm-offset-2 text-muted">
+                                暂无收费模板，<a href="#" class="text-success">（创建新模板）</a> 方便下次创建相同类型项目时直接套用
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">确认</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="platform-inner-page" class="full feelist-block">
+        <div class="service-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="row clearfix">
+                            <span class="text-info">收费项目列表</span>
+                            <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#createPrj">创建项目</a>
+                        </div>
+                        <div class="row">
+                            <div class="cut-line"></div>
+                        </div>
+                        <form class="search-prj form-inline" action="#">
+                            <label for="prjName">
+                                项目名称：
+                                <input type="text" class="form-control" id="prjName" placeholder="项目名称">
+                            </label>
+                            <label for="exampleInputName2">
+                                起止日期：
+                                <input type="date" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                <span>-</span>
+                                <input type="date" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                            </label>
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </form>
+                        <div class="row">
+                            <div class="cut-line"></div>
+                        </div>
+                        <table class="table table-hover table-bordered text-center feelist">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">项目名称</th>
+                                    <th class="text-center">收费部门</th>
+                                    <th class="text-center">应收金额</th>
+                                    <th class="text-center">已收金额</th>
+                                    <th class="text-center">项目截止日期</th>
+                                    <th class="text-center">项目状态</th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>学费</td>
+                                    <td>教务处</td>
+                                    <td>1100</td>
+                                    <td>1100</td>
+                                    <td>2016-3-30</td>
+                                    <td class="text-success">进行中</td>
+                                    <td class="text-success">
+                                        <a href="#" class="text-success">查看</a>
+                                        <a href="#" class="text-warning">暂停</a>
+                                        <a href="#" class="text-red">取消</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>学费</td>
+                                    <td>教务处</td>
+                                    <td>1100</td>
+                                    <td>1100</td>
+                                    <td>2016-3-30</td>
+                                    <td class="text-success">进行中</td>
+                                    <td class="text-success">
+                                        <a href="#" class="text-success">查看</a>
+                                        <a href="#" class="text-muted">激活</a>
+                                        <a href="#" class="text-info">修改</a>
+                                        <a href="#" class="text-primary">审核</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

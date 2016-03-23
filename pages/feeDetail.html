@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>喜付云平台</title>
+    <!-- Bootstrap -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../res/css/lib/awesome/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/dev/platFormLayout.css">
+    <script type="text/javascript" src="../res/js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../res/js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../res/js/dev/common.js"></script>
+</head>
+
+<body>
+    <div id="platform-inner-page" class="full feelist-block">
+        <div class="service-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="row clearfix">
+                            <span class="text-info">费用详情</span>
+                            <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#createPrj">导出excel</a>
+                        </div>
+                        <div class="row">
+                            <div class="cut-line"></div>
+                        </div>
+                        <form class="search-prj form-inline" action="#">
+                            <label for="prjName">
+                                查询条件：
+                                <input type="text" class="form-control" id="prjName" placeholder="姓名/学号/身份证号">
+                            </label>
+                            <label for="exampleInputName2">
+                                起止日期：
+                                <input type="date" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                <span>-</span>
+                                <input type="date" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                            </label>
+                            <label for="exampleInputName2">
+                                院系：
+                                <select name="" id="" class="form-control">
+                                    <option value="">计算机</option>
+                                    <option value="">化工</option>
+                                    <option value="">经济</option>
+                                </select>
+                            </label>
+                            <label for="exampleInputName2">
+                                状态：
+                                <select name="" id="" class="form-control">
+                                    <option value="">全部</option>
+                                    <option value="">待缴</option>
+                                    <option value="">已退费</option>
+                                </select>
+                            </label>
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </form>
+                        <div class="row">
+                            <div class="cut-line"></div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-right">
+                                <span>人数：XX人</span>
+                                <span>应缴金额：XX 元</span>
+                                <span>已缴金额：XX 元</span>
+                            </div>
+                            <!-- Table -->
+                            <table class="table table-hover table-bordered text-center feelist">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">院系</th>
+                                        <th class="text-center">姓名</th>
+                                        <th class="text-center">身份证号</th>
+                                        <th class="text-center">学号</th>
+                                        <th class="text-center">缴费信息</th>
+                                        <th class="text-center">应缴金额</th>
+                                        <th class="text-center">已缴金额</th>
+                                        <th class="text-center">待缴金额</th>
+                                        <th class="text-center">缴费时间</th>
+                                        <th class="text-center">缴费状态</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>信息管理学院</td>
+                                        <td>李四</td>
+                                        <td>622102312312313</td>
+                                        <td>20130123123</td>
+                                        <td>四六级考试</td>
+                                        <td>100</td>
+                                        <td>0</td>
+                                        <td>100</td>
+                                        <td>2016-03-03</td>
+                                        <td>待缴</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

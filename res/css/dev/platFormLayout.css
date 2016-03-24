@@ -18,6 +18,10 @@ body {
     font-size: 12px;
 }
 
+div {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -83,6 +87,7 @@ iframe {
 
 .form-control {
     border-radius: 0px;
+    font-size: 12px;
 }
 
 .cut-line {
@@ -115,58 +120,131 @@ label {
     font-weight: normal;
 }
 
+table thead,
+table tfoot {
+    color: #37474f;
+}
+
+table tbody {
+    color: #546e7a;
+}
+
 
 /* begin登录 */
 
-.site-login-layout .header-row {
-    height: 50px;
-    mini-width: 1000px;
-    max-width: 1200px;
-    margin: 0px auto;
+.site-login-layout {
+    background: url(../../images/login-bg.png) center center no-repeat;
+    background-size: cover;
 }
-
-.site-login-layout .logo {
-    display: inline-block;
+.site-login-layout .site-header{
+    height: 40px;
+    line-height: 40px;
+    background:#000;
 }
-
-.site-login-layout .xifuapp-site {
-    display: inline-block;
+.site-login-layout .site-header .top-nav{
+    max-width:1200px;
+    margin: 0px auto; 
+    color: #fff;
+    font-size: 12px;
+    text-align: right;
+}
+.site-login-layout .site-header .top-nav a{
+    color: #fff;
+}
+.site-login-layout .site-header .top-nav span{
+    margin: 0px 20px;
 }
 
 .site-login-layout .login-wrap {
-    width: 320px;
-    height: 400px;
-    padding: 20px 0px;
-    border: 1px #ddd solid;
-    border-radius: 5px;
+    width: 380px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -190px;
+    margin-top: -235px;
 }
 
-.site-login-layout .site-body {
-    mini-width: 1000px;
-    max-width: 1200px;
-    margin: 0px auto;
-    margin-top: 30px;
-}
-
-.user-login #veri-code {
-    width: 110px;
-}
-
-.user-login .veri-code-wrap {
-    width: 120px;
-    height: 34px;
-    vertical-align: middle;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.user-login .veri-code-wrap img {
+.site-login-layout .login-wrap .login-title {
     width: 100%;
-    height: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+    background: url(../../images/icon/login-title.png) center center no-repeat;
 }
 
-.user-login .submit-wrap {
-    margin-top: 40px;
+.site-login-layout .form-box label {
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+    width: 55px;
+    text-align: center;
+    float: left;
+}
+
+.site-login-layout .login-wrap .input-box {
+    display: inline-block;
+    height: 34px;
+    width: 300px;
+    margin-bottom: 20px;
+    background: #8599b1;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.site-login-layout .login-wrap .input-box.submit-box {
+    background: #267bfa;
+    border-radius: 10px;
+}
+
+.site-login-layout .login-wrap .input-box.submit-box button {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    height: 34px;
+    color: #fff;
+}
+
+.site-login-layout .login-wrap .input-box .icon {
+    height: 34px;
+    width: 50px;
+    display: inline-block;
+    background: url(../../images/icon/user.png) center center no-repeat;
+    float: left;
+}
+
+.site-login-layout .login-wrap .form-box input {
+    float: left;
+    width: 230px;
+    height: 24px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: #8599b1;
+    color: #fff;
+}
+
+.site-login-layout .login-wrap .form-box .veri-code-box {
+    background: none;
+}
+
+.site-login-layout .login-wrap .form-box .veri-code-box input {
+    width: 130px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.site-login-layout .login-wrap .form-box .img-wrap {
+    height: 34px;
+    width: 130px;
+    display: inline-block;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.site-login-layout .login-wrap .form-box .img-wrap img {
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -475,6 +553,22 @@ label {
     display: none;
 }
 
+#platform-inner-page.full .service-nav tbody td a {
+    margin-right: 10px;
+}
+
+#platform-inner-page.full .service-nav tbody td a:last-child {
+    margin-right: 0px;
+}
+
+#platform-inner-page .service-body form.form-inline label {
+    margin-right: 10px;
+}
+
+#platform-inner-page .service-body form.form-inline label:last-child {
+    margin-right: 0px;
+}
+
 
 /* end 内层布局 */
 
@@ -560,22 +654,23 @@ label {
 
 /* begin 用户管理 */
 
-.user-list.x-block td.operate a {
-    margin-left: 10px;
-}
-
 
 /* end 用户管理*/
 
 
 /* begin 费用管理 */
 
-.feelist-block .search-prj label {
+.feeList.x-block .search-prj label {
     margin-right: 20px;
 }
-.feelist-block .search-prj {}
-.feelist-block .feelist tbody td a{
+
+.feeList.x-block .feelist tbody td a {
     margin-right: 10px;
+}
+
+.feeDetail.x-block .panel-heading span {
+    margin-right: 20px;
+    color: #37474f;
 }
 
 

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>喜付云平台</title>
+    <!-- Bootstrap -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../res/css/lib/bootstrap/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../res/css/lib/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/dev/platFormLayout.css">
+    <script type="text/javascript" src="../res/js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../res/js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../res/js/dev/common.js"></script>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="re-pwd-mode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">修改密码</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-horizontal">
+                        <div class="form-group">
+                            <label for="curr_password" class="control-label col-sm-3">当前登录密码：</label>
+                            <div class="col-sm-7">
+                                <input type="password" class="form-control" name="curr_password" id="curr_password"  />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="new_password" class="control-label col-sm-3">新登录密码：</label>
+                            <div class="col-sm-7">
+                                <input type="password" class="form-control" name="new_password" id="new_password" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="r_new_password" class="control-label col-sm-3">确认新登录密码：</label>
+                            <div class="col-sm-7">
+                                <input type="password" class="form-control" name="r_new_password" id="r_new_password" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="platform-inner-page" class="full">
+        <div class="service-body accountManage x-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <form class="form-horizontal">
+                            <p class="text-info">账号管理</p>
+                            <div class="cut-line"></div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">账户名称：</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="inputEmail3" value="清华大学" placeholder="账户名称">
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="text-red form-control-static">（必填）</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">姓名：</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="inputEmail3" value="张三" placeholder="姓名">
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="text-red form-control-static">（必填）</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">职务：</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="inputEmail3" value="院长" placeholder="职务">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">所属部门：</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="inputEmail3" value="财务部" placeholder="所属部门">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">手机号码：</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="inputEmail3" value="6546358" placeholder="手机号码">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">邮箱地址：</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="inputEmail3" value="85137@qq.com" placeholder="邮箱地址">
+                                </div>
+                            </div>
+                            <div class="row">
+                                安全设置
+                                <div class="cut-line"></div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <b>登录密码：</b>
+                                </div>
+                                <div class="col-sm-6">
+                                    <span class="text-muted">建议定期更换密码，设置一个包含字母，符号或数字中至少两项且长度为8~16位字符的密码。</span>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#" class="text-success" data-toggle="modal" data-target="#re-pwd-mode">修改</a>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary btn-sm" role="btn">&nbsp;&nbsp;保存&nbsp;&nbsp;</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="userList.html" class="btn btn-default btn-sm">&nbsp;&nbsp;返回&nbsp;&nbsp;</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

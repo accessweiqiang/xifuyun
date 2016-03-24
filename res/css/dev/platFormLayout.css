@@ -15,6 +15,7 @@ form {
 }
 
 body {
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
 }
 
@@ -24,6 +25,7 @@ div {
 
 a {
     text-decoration: none;
+    outline: none;
 }
 
 a:link {
@@ -85,6 +87,14 @@ iframe {
     margin-bottom: 50px;
 }
 
+.margin-b-10 {
+    margin-bottom: 50px;
+}
+
+.margin-10-10 {
+    margin: 0px 10px;
+}
+
 .form-control {
     border-radius: 0px;
     font-size: 12px;
@@ -136,22 +146,39 @@ table tbody {
     background: url(../../images/login-bg.png) center center no-repeat;
     background-size: cover;
 }
-.site-login-layout .site-header{
+
+.site-login-layout .site-header {
     height: 40px;
     line-height: 40px;
-    background:#000;
+    background: #000;
 }
-.site-login-layout .site-header .top-nav{
-    max-width:1200px;
-    margin: 0px auto; 
+
+.site-login-layout .site-footer {
+    color: #8599B1;
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.site-login-layout .site-footer span {
+    margin: 0px 10px;
+}
+
+.site-login-layout .site-header .top-nav {
+    max-width: 1200px;
+    margin: 0px auto;
     color: #fff;
     font-size: 12px;
     text-align: right;
 }
-.site-login-layout .site-header .top-nav a{
+
+.site-login-layout .site-header .top-nav a {
     color: #fff;
 }
-.site-login-layout .site-header .top-nav span{
+
+.site-login-layout .site-header .top-nav span {
     margin: 0px 20px;
 }
 
@@ -203,14 +230,22 @@ table tbody {
     outline: none;
     height: 34px;
     color: #fff;
+    cursor: pointer;
 }
 
 .site-login-layout .login-wrap .input-box .icon {
     height: 34px;
     width: 50px;
     display: inline-block;
-    background: url(../../images/icon/user.png) center center no-repeat;
     float: left;
+}
+
+.site-login-layout .login-wrap .input-box .icon.iuser {
+    background: url(../../images/icon/user.png) center center no-repeat;
+}
+
+.site-login-layout .login-wrap .input-box .icon.ipwd {
+    background: url(../../images/icon/lock.png) center center no-repeat;
 }
 
 .site-login-layout .login-wrap .form-box input {
@@ -266,12 +301,13 @@ table tbody {
 }
 
 #platform-topbar h1 {
-    margin: 0px;
+    width: 300px;
+    margin-left: 26px;
     font-size: 18px;
     height: 50px;
     line-height: 50px;
     display: inline-block;
-    border-right: 1px #0685B0 solid;
+    background: url(../../images/home-logo.png) center center no-repeat;
 }
 
 #platform-topbar .site-title .site-home {
@@ -298,15 +334,15 @@ table tbody {
     float: right;
     height: 50px;
     line-height: 50px;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
-#platform-topbar .user-info .glyphicon {
+#platform-topbar .user-info .fa {
     margin: 0px 5px;
 }
 
-#platform-topbar .user-info .access-time {
-    margin-right: 30px;
+#platform-topbar .user-info .user-account {
+    margin: 0px 30px;
 }
 
 #platform-body {
@@ -327,6 +363,19 @@ table tbody {
     overflow-x: hidden;
     color: #fff;
     font-size: 12px;
+    -webkit-transition: width ease 0.5s;
+    -moz-transition: width ease 0.5s;
+    -o-transition: width ease 0.5s;
+    -ms-transition: width ease 0.5s;
+    transition: width ease 0.5s;
+}
+
+#platform-sidebar-wrap.fold {
+    width: 50px;
+}
+
+#platform-sidebar-wrap.fold .sidebar-fold {
+    width: 50px;
 }
 
 #platform-sidebar-wrap ol,
@@ -347,13 +396,23 @@ table tbody {
 }
 
 #platform-sidebar-wrap .sidebar-fold {
-    background-color: #5F5F5F;
+    background-color: #293038;
     color: #E5E5E5;
     font-size: 14px;
     text-align: center;
     height: 30px;
     line-height: 30px;
     cursor: pointer;
+    width: 180px;
+    -webkit-transition: width ease 0.5s;
+    -moz-transition: width ease 0.5s;
+    -o-transition: width ease 0.5s;
+    -ms-transition: width ease 0.5s;
+    transition: width ease 0.5s;
+}
+
+#platform-sidebar-wrap .sidebar-fold i {
+    color: #FFFFFF;
 }
 
 #platform-sidebar-wrap .sidebar-content {
@@ -427,11 +486,10 @@ table tbody {
     line-height: 40px;
     width: 50px;
     text-align: center;
-    vertical-align: middle;
 }
 
 #platform-sidebar-wrap .sidebar-nav-item .icon-r {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 #platform-sidebar-wrap .sidebar-nav-item.active i {
@@ -542,6 +600,8 @@ table tbody {
     right: 0px;
     overflow: hidden;
     overflow-y: auto;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 15px;
 }
 
@@ -553,11 +613,11 @@ table tbody {
     display: none;
 }
 
-#platform-inner-page.full .service-nav tbody td a {
+tbody td a {
     margin-right: 10px;
 }
 
-#platform-inner-page.full .service-nav tbody td a:last-child {
+tbody td a:last-child {
     margin-right: 0px;
 }
 

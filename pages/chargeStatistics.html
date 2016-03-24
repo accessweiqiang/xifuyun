@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>喜付云平台</title>
-    <!-- Bootstrap -->
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="../res/css/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../res/js/lib/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/lib/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/dev/platFormLayout.css">
     <!--[if lt IE 9]>
         <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="../res/css/lib/awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="../res/css/dev/platFormLayout.css">
-    <script type="text/javascript" src="../res/js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../res/js/lib/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../res/js/lib/bootstrap.min.js"></script>
     <script type="text/javascript" src="../res/js/dev/common.js"></script>
+    <script type="text/javascript" src="../res/js/lib/jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         <div class="service-body chargeStatistisc x-block">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-12">
                         <div class="row clearfix">
                             <span class="text-info">费用统计</span>
                             <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#createPrj">导出excel</a>
@@ -37,76 +37,74 @@
                         <form class="search-prj form-inline" action="#">
                             <label for="exampleInputName2">
                                 选择统计日期：
-                                <input type="date" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                <input type="text" class="form-control date-control"  placeholder="起始日期">
                                 <span>-</span>
-                                <input type="date" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                <input type="text" class="form-control date-control"  placeholder="截止日期">
                             </label>
                             <button type="submit" class="btn btn-default">查看</button>
                         </form>
                         <div class="row">
                             <div class="cut-line"></div>
                         </div>
-                        <div class="panel panel-default">
-                            <!-- Table -->
-                            <table class="table table-hover table-bordered text-center feelist">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">统计日期</th>
-                                        <th class="text-center">项目</th>
-                                        <th class="text-center">发起部门</th>
-                                        <th class="text-center">收费金额</th>
-                                        <th class="text-center">操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2016-4-1</td>
-                                        <td>全部</td>
-                                        <td>全部</td>
-                                        <td>10000</td>
-                                        <td>
-                                            <a href="" class="text-primary">-</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2016-4-1</td>
-                                        <td>双学位报名费</td>
-                                        <td>财务处</td>
-                                        <td>10000</td>
-                                        <td>
-                                            <a href="" class="text-primary">查看详情</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th class="text-center">合计</th>
-                                        <th></th>
-                                        <th></th>
-                                        <th class="text-center">10000</th>
-                                        <th>
-                                        </th>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                            <ul class="pagination pagination-sm">
-                                <li class="disabled">
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- Table -->
+                        <table class="table table-hover table-bordered text-center feelist">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">统计日期</th>
+                                    <th class="text-center">项目</th>
+                                    <th class="text-center">发起部门</th>
+                                    <th class="text-center">收费金额</th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2016-4-1</td>
+                                    <td>全部</td>
+                                    <td>全部</td>
+                                    <td>10000</td>
+                                    <td>
+                                        <a href="" class="text-primary">-</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2016-4-1</td>
+                                    <td>双学位报名费</td>
+                                    <td>财务处</td>
+                                    <td>10000</td>
+                                    <td>
+                                        <a href="" class="text-primary">查看详情</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th class="text-center">合计</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th class="text-center">10000</th>
+                                    <th>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <ul class="pagination pagination-sm">
+                            <li class="disabled">
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

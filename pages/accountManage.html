@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>喜付云平台</title>
-    <!-- Bootstrap -->
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="../res/css/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../res/js/lib/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/lib/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/dev/platFormLayout.css">
     <!--[if lt IE 9]>
         <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="../res/css/lib/awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="../res/css/dev/platFormLayout.css">
-    <script type="text/javascript" src="../res/js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../res/js/lib/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../res/js/lib/bootstrap.min.js"></script>
     <script type="text/javascript" src="../res/js/dev/common.js"></script>
+    <script type="text/javascript" src="../res/js/lib/jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                         <div class="form-group">
                             <label for="curr_password" class="control-label col-sm-3">当前登录密码：</label>
                             <div class="col-sm-7">
-                                <input type="password" class="form-control" name="curr_password" id="curr_password"  />
+                                <input type="password" class="form-control" name="curr_password" id="curr_password" />
                             </div>
                         </div>
                         <div class="form-group">
@@ -63,7 +63,7 @@
         <div class="service-body accountManage x-block">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-12">
                         <form class="form-horizontal">
                             <p class="text-info">账号管理</p>
                             <div class="cut-line"></div>
@@ -109,33 +109,21 @@
                                     <input type="text" class="form-control" id="inputEmail3" value="85137@qq.com" placeholder="邮箱地址">
                                 </div>
                             </div>
-                            <div class="row">
-                                安全设置
-                                <div class="cut-line"></div>
-                            </div>
+                            <p>安全设置</p>
+                            <p class="cut-line"></p>
                             <br/>
                             <br/>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <b>登录密码：</b>
-                                </div>
-                                <div class="col-sm-6">
-                                    <span class="text-muted">建议定期更换密码，设置一个包含字母，符号或数字中至少两项且长度为8~16位字符的密码。</span>
-                                </div>
-                                <div class="col-sm-2">
-                                    <a href="#" class="text-success" data-toggle="modal" data-target="#re-pwd-mode">修改</a>
-                                </div>
-                            </div>
+                            <p>
+                                <b>登录密码：</b>
+                                <span class="text-muted margin-10-10">建议定期更换密码，设置一个包含字母，符号或数字中至少两项且长度为8~16位字符的密码。</span>
+                                <a href="#" class="text-success" data-toggle="modal" data-target="#re-pwd-mode">修改</a>
+                            </p>
                             <br/>
                             <br/>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <button type="submit" class="btn btn-primary btn-sm" role="btn">&nbsp;&nbsp;保存&nbsp;&nbsp;</button>
-                                </div>
-                                <div class="col-sm-2">
-                                    <a href="userList.html" class="btn btn-default btn-sm">&nbsp;&nbsp;返回&nbsp;&nbsp;</a>
-                                </div>
-                            </div>
+                            <p>
+                                <button type="submit" class="btn btn-primary btn-sm" role="btn">&nbsp;&nbsp;保存&nbsp;&nbsp;</button>
+                                <a href="userList.html" class="btn btn-default btn-sm margin-10-10">&nbsp;&nbsp;返回&nbsp;&nbsp;</a>
+                            </p>
                         </form>
                     </div>
                 </div>
